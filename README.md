@@ -5,8 +5,8 @@ This is a simple http server that is rather barren at the moment but I am workin
               *I.e small dynamic sites with maybe a couple hundred concurrent users*   
 Currently the server can only send text based documents at the current moment but I am working adding support for binary data like images and other files    
 Features I plan on adding in the future
--HTTPS
--Maybe a load balancer?
--Richer Configuration options
--FTP?
+- HTTPS
+- Maybe a load balancer?
+- Richer Configuration options
+- FTP?
 
