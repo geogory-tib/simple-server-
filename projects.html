@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geogory's Projects</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+  header {
+    font-size: 30pt;
+    text-align: center;
+  }
+
+  .projects {
+    width: 2200px;
+    height: auto;
+    display: flexbox;
+    justify-content: flex-end;
+
+  }
+
+  .goless {
+    display: inline-block;
+    outline: double;
+    outline-color: rgb(178, 132, 190);
+    outline-width: 5px;
+    width: 500px;
+    background-color: rgb(178, 132, 190);
+    margin: 20px;
+    margin-right: 250px;
+  }
+
+  .golessparagraph {
+    text-align: left;
+    font-size: 18pt;
+    width: 500px;
+  }
+
+  .golesspng {
+    width: 500px;
+    height: auto;
+
+  }
+
+  .simpletextparagraph {
+    width: 500px;
+    text-align: left;
+    font-size: 18pt;
+  }
+
+  .simpletext {
+    outline: double;
+    outline-color: rgb(178, 132, 190);
+    outline-width: 5px;
+    width: 500px;
+    background-color: rgb(178, 132, 190);
+    display: inline-block;
+    margin: 20px;
+    margin-right: 250px;
+  }
+
+  .simpletextpng {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .future {
+    outline: double;
+    outline-color: rgb(178, 132, 190);
+    outline-width: 5px;
+    background-color: rgb(178, 132, 190);
+    width: 500px;
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 500px;
+  }
+
+  .futurepar {
+    font-size: 18pt;
+  }
+
+  .futurelist {
+    font-size: 18pt;
+  }
+
+  .futureimg {
+    margin-top: 5px;
+    max-width: 75%;
+    height: auto;
+  }
+</style>
+
+<body>
+  <header>My Projects</header>
+  <div class="projects">
+    <div class="goless">
+      <h2>Goless! A terminal pager written in go!</h2>
+      <p class="golessparagraph">
+        <img class="golesspng" src="/images/golesspng.png">
+        Goless is a terminal pager I wrote in go. It is roughly 390ish lines of code and only uses the go stdlib and
+        termbox-go.
+        It has pattern finding and the abilty to search by lines. Im working on writting a custom color config and a man
+        page for it.
+        It so far has been my favorite project to make.
+      </p>
+
+    </div>
+    <div class="simpletext">
+      <h2>"texteditor"</h2>
+      <p class="simpletextparagraph">
+        <img class="simpletextpng" src="/images/simpletexteditor.png">
+        <br>
+        "texteditor" is a simple texteditor i wrote when I was messing around in java. It's a lot like Windows' Notepad
+        But with less font options. I wrote it using Java's Swing API which actually was kinda nice to use for the most
+        part.
+        Making this showed me how annoying java's OOP design can be. I tend to prefer a more procedural style of code
+        and
+        being force
+        to a OO mindset tends to annoy me but it was still really fun to make.
+      </p>
+    </div>
+    <div class="future">
+      <h2>Future Projects!</h2>
+      <p class="futurepar">These are just some future projects I have in mind that will take some time</p>
+      <ul class="futurelist">
+        <li>A webserver in go</li>
+        <li>A texteditor in go or zig</li>
+        <li>A file browser in go</li>
+        <li>A game in zig?</li>
+        <img class="futureimg" src="/images/future.png">
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
