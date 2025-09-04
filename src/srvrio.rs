@@ -1,18 +1,16 @@
 use std::{
     fs::File,
-    io::{BufRead, BufReader, Read},
+    io::{self, BufRead, BufReader, Error, Read},
 };
 
-pub fn load_html(filename: &str) -> String {
-    let html_file = File::open(filename).unwrap_or_else(|_| {
-        todo!();
-    });
+pub fn load_html(filename: &str) -> Result<String, io::Error> {
+    let html_file = File::open(filename)?;
     let mut reader = BufReader::new(html_file);
     let mut html_data = String::new();
     _ = reader.read_to_string(&mut html_data).unwrap_or_else(|_| {
         todo!();
     });
-    html_data
+    Ok(html_data)
 }
 pub fn load_config() -> Vec<String> {
     //this will change eventually
@@ -31,4 +29,11 @@ pub fn load_config() -> Vec<String> {
         parsed_config_vec.push(config_element_parsed);
     }
     parsed_config_vec
+}
+pub fn read_binary_data(filename: &str) -> Result<Vec<u8>, io::Error> {
+    let file = File::open("File")?;
+    let mut reader = BufReader::new(file);
+    let mut binary_vec: Vec<u8> = Vec::with_capacity(100);
+    _ = reader.read_to_end(&mut binary_vec).unwrap();
+    Ok(binary_vec)
 }
