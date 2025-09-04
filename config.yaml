@@ -3,5 +3,5 @@ ip: 127.0.0.1
 #if using port 80 program must be ran as root
 port: 6969
 #default is current working directory
-server_root: ./
+server_root:
 # additonal-config options may come soon. Like logging and etc

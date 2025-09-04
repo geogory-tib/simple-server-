@@ -4,3 +4,8 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+img {
+  max-width: 20%;
+  height: auto;
+}

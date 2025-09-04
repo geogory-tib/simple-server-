@@ -31,7 +31,7 @@ pub fn load_config() -> Vec<String> {
     parsed_config_vec
 }
 pub fn read_binary_data(filename: &str) -> Result<Vec<u8>, io::Error> {
-    let file = File::open("File")?;
+    let file = File::open(filename)?;
     let mut reader = BufReader::new(file);
     let mut binary_vec: Vec<u8> = Vec::with_capacity(100);
     _ = reader.read_to_end(&mut binary_vec).unwrap();
